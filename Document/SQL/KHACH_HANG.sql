@@ -1,7 +1,7 @@
 USE [ORDERDB]
 GO
 
-/****** Object:  Table [dbo].[KHACH_HANG]    Script Date: 06/03/2017 8:30:44 PM ******/
+/****** Object:  Table [dbo].[KHACH_HANG]    Script Date: 3/9/2017 11:51:56 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -9,12 +9,11 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[KHACH_HANG](
-	[ID] [nvarchar](10) NOT NULL,
-	[TEN_STUDIO] [nvarchar](150) NOT NULL,
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[ID_KHACH_HANG] [nvarchar](10) NULL,
+	[TEN_KHACH_HANG] [nvarchar](150) NOT NULL,
 	[DIA_CHI] [nvarchar](255) NULL,
 	[EMAIL] [nvarchar](150) NULL,
-	[TEN_NGUOI_LIEN_HE] [nvarchar](150) NULL,
-	[SDT_NGUOI_LIEN_HE] [nvarchar](50) NULL,
 	[ACC_FTP] [nvarchar](150) NULL,
 	[GIAM_GIA] [nvarchar](255) NULL,
 	[TEN_SALES] [nvarchar](255) NULL,

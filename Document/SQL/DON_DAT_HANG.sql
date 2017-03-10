@@ -1,0 +1,31 @@
+USE [ORDERDB]
+GO
+
+/****** Object:  Table [dbo].[DON_DAT_HANG]    Script Date: 3/9/2017 9:24:26 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[DON_DAT_HANG](
+	[ID] [nvarchar](9) NOT NULL,
+	[ID_KHACH_HANG] [nvarchar](10) NOT NULL,
+	[NGAY_GIAO] [date] NULL,
+	[TRANG_THAI_THANH_TOAN] [char](1) NULL,
+	[TONG_CONG] [int] NULL,
+	[VAT] [int] NULL,
+	[TONG_TIEN] [nchar](10) NULL,
+	[PHI_VAN_CHUYEN] [nchar](10) NULL,
+	[NOTES] [nchar](10) NULL,
+	[SDT] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
